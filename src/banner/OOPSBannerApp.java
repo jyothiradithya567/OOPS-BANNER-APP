@@ -1,8 +1,13 @@
-public static void main(String[] args) {
+public class OOPSBannerApp {
 
-    System.out.println(" ****   ****  ****  **** ");
-    System.out.println("*    * *    * *    * *    *");
-    System.out.println("*    * *    * *    * *    *");
-    System.out.println(" ****   ****  ****  **** ");
+    public static void main(String[] args) {
+        printOOPSBanner();
+    }
 
+    public static void printOOPSBanner() {
+        System.out.println(" ****   ****  ****  **** ");
+        System.out.println("*    * *    * *    * *    *");
+        System.out.println("*    * *    * *    * *    *");
+        System.out.println(" ****   ****  ****  **** ");
+    }
 }
