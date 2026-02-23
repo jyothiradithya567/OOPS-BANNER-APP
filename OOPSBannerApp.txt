@@ -1,0 +1,37 @@
+/**
+ * UC4 – Using separate class inside the same file
+ */
+package banner;
+
+    public static void main(String[] args) {
+
+        // Create object of BannerPattern
+        BannerPattern pattern = new BannerPattern();
+
+        // Print banner using data from BannerPattern
+        printBanner(pattern.getOOPSBanner());
+    }
+
+    // Method to print banner
+    public static void printBanner(String[] banner) {
+        for (String line : banner) {
+            System.out.println(line);
+        }
+    }
+}
+
+/**
+ * BannerPattern class
+ * Stores banner data
+ */
+class BannerPattern {
+
+    public String[] getOOPSBanner() {
+        return new String[] {
+            " ****   ****  ****  **** ",
+            "*    * *    * *    * *    *",
+            "*    * *    * *    * *    *",
+            " ****   ****  ****  **** "
+        };
+    }
+}
